@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henry - Hulu Style Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Profile Selection Page (Initial View) -->
+    <div class="page active" id="profile-selection-page">
+        <section class="profile-selection">
+            <div class="container">
+                <h2>Who's Watching?</h2>
+                <div class="profiles">
+                    <div class="profile" data-profile="recruiter">
+                        <img src="/fotos/person1.png" alt="Person1" class="Person">
+                        <!-- <div class="profile-img blue">😊</div> -->
+                        <div class="profile-name">Recruiter</div>
+                    </div>
+                    <div class="profile" data-profile="developer">
+                        <img src="/fotos/person2.png" alt="Person2" class="Person">
+                        <!-- <div class="profile-img gray">😊</div> -->
+                        <div class="profile-name">Developer</div>
+                    </div>
+                    <div class="profile" data-profile="client">
+                        <img src="/fotos/person6.png" alt="Person3" class="Person">
+                        <!-- <div class="profile-img green">😊</div> -->
+                        <div class="profile-name">Client</div>
+                    </div>
+                    <div class="profile" data-profile="adventurer">
+                        <img src="/fotos/person4.png" alt="Person4" class="Person">
+                        <!-- <div class="profile-img orange">😊</div> -->
+                        <div class="profile-name">Adventurer</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Main Content Page (Hidden Initially) -->
+    <div class="page" id="main-content-page">
+        <header id="header">
+            <div class="container">
+                <nav>
+                    <div class="logo">Henry</div>
+                    <ul class="nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#top-picks">Recommendations</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#hire">Hire Me</a></li>
+                    </ul>
+                    <div class="profile-icon">👤</div>
+                </nav>
+            </div>
+        </header>
+
+        <section class="hero" id="home">
+            <div class="container">
+                <div id= "homeBackgroundimg" class="hero-content" >
+                    <!-- style="background-image: url('fotos/contact_me.jpg')" for the hero-content div class to make an image for the home page-->
+                    <h1>Henry - Programmer</h1>
+                    <p>Dynamic and results-driven Software Engineer with 1+ years in full-stack development across high-impact, large-scale applications. I bring expertise in React, Node, AWS, Kubernetes, and Docker, with a passion for optimizing systems to scale.</p>
+                    <div class="action-buttons">
+                        <a href="Resume@Henry.pdf" download>
+                            <button class="btn btn-primary">
+                                <span class="btn-icon">▶</span> Resume
+                            </button>
+                        </a>
+                        <a href="https://www.linkedin.com/in/henry-ramirez-jr-a939a5216/" target="_blank">
+                            <button class="btn btn-secondary">
+                                <span class="btn-icon">ℹ</span> LinkedIn
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="top-picks">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Today's Top Picks</h2>
+                    <p class="section-subtitle">Explore my highlighted projects and experiences</p>
+                </div>
+                
+                <div class="picks-row">
+                    <h3>Recommendations</h3>
+                    <div class="picks-content">
+                        <!-- <div class="pick-card" style="background-image: url('/api/placeholder/400/320')">
+                            <div class="pick-card-content">
+                                <h4>Recommendations</h4>
+                            </div>
+                        </div> -->
+                        <a href="#hire">
+                            <div id="contact" class="pick-card">
+                                <div class="pick-card-content">
+                                    <h4>Contact Me</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#projects">
+                            <div id="project" class="pick-card">
+                                <div class="pick-card-content">
+                                    <h4>Projects</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#skills">
+                            <div id="experience" class="pick-card">
+                                <div class="pick-card-content">
+                                    <h4>Experience</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- <div class="pick-card" style="background-image: url('/api/placeholder/400/320')">
+                            <div class="pick-card-content">
+                                <h4>Certifications</h4>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Skills & Expertise</h2>
+                    <p class="section-subtitle">Technologies and tools I work with</p>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend Development</h3>
+                        <ul class="skill-list">
+                            <li>React.js</li>
+                            <li>JavaScript / TypeScript</li>
+                            <li>HTML5 & CSS3</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Backend Development</h3>
+                        <ul class="skill-list">
+                            <li>Node.js</li>
+                            <li>Java</li>
+                            <li>C++</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- <div class="skill-category">
+                        <h3>DevOps & Cloud</h3>
+                        <ul class="skill-list">
+                            <li>AWS / GCP</li>
+                            <li>Docker / Kubernetes</li>
+                            <li>CI/CD Pipelines</li>
+                            <li>Terraform / IaC</li>
+                            <li>Monitoring & Logging</li>
+                        </ul>
+                    </div> -->
+                    
+                    <div class="skill-category">
+                        <h3>Tools & Practices</h3>
+                        <ul class="skill-list">
+                            <li>Git / GitHub</li>
+                            <li>Agile / Scrum</li>
+                            <li>Test-Driven Development</li>
+                            <li>Performance Optimization</li>
+                            <li>Security Best Practices</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">A selection of my recent work and achievements</p>
+                </div>
+                
+                <div class="projects-container">
+                    <a href="https://github.com/HDramire/fighting-game" target="_blank">
+                        <div class="project-card">
+                            <div id="fightingGame" class="project-image">
+                                <span class="fade-text">Project 1</span>
+                            </div>
+                            <div class="project-content">
+                                <h3>Fightting Game</h3>
+                                <p>Built a game inspired by Street Fighter, where two players can fight each other and one of them can win a match. </p>
+                                <div class="project-tags">
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/HDramire/ContactApp2" target="_blank">
+                        <div class="project-card">
+                            <div id="phoneContact" class="project-image">
+                                <span class="fade-text">Project 2</span>
+                            </div>
+                            <div class="project-content">
+                                <h3>Contacts app</h3>
+                                <p>Developed a contact app where the user its shown  couple of names with their phone number but can also add more contacts.</p>
+                                <div class="project-tags">
+                                    <span class="tag">React.js</span>
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <div class="project-card">
+                        <div id="personalWeb" class="project-image">
+                            <span class="fade-text">Project 3</span>
+                        </div>
+                        <div class="project-content">
+                            <h3>Microservices Migration</h3>
+                            <p>Transformed legacy monolith into a scalable microservices architecture, reducing response times by 80%.</p>
+                            <div class="project-tags">
+                                <span class="tag">Kubernetes</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">Kafka</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="hire">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Let's Work Together</h2>
+                    <p class="section-subtitle">Interested in collaborating or have a project in mind? Get in touch!</p>
+                </div>
+                <a href="mailto:hrehenry29@gmail.com">
+                    <div style="text-align: center; margin-top: 30px;">
+                        <button class="btn btn-primary">Contact Me</button>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>© 2025 Henry. All rights reserved.</p>
+                <p>Inspired by Hulu's design language & Netflix's layout</p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
