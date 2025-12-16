@@ -135,6 +135,42 @@
             align-items: center;
             justify-content: center;
         }
+
+        .profile-wrapper {
+            position: relative;
+        }
+
+        .profile-menu {
+            position: absolute;
+            right: 0;
+            top: 45px;
+            background: #1a1c22;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 8px;
+            padding: 8px;
+            min-width: 160px;
+            display: none;
+            z-index: 999;
+        }
+
+        .profile-menu.show {
+            display: block;
+        }
+
+        .profile-menu-item {
+            width: 100%;
+            background: transparent;
+            border: none;
+            color: #fff;
+            padding: 10px 12px;
+            text-align: left;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+
+        .profile-menu-item:hover {
+            background: rgba(255,255,255,0.08);
+        }
         
         /* Hero Section */
         .hero {
