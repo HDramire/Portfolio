@@ -13,6 +13,8 @@
             const profileSelectionPage = document.getElementById('profile-selection-page');
             const mainContentPage = document.getElementById('main-content-page');
             const header = document.getElementById('header');
+
+            // If a profile was already selected (refresh), skip selection screen
             
             profiles.forEach(profile => {
                 profile.addEventListener('click', function() {
@@ -38,6 +40,48 @@
             });
             
             // Check if a profile was already selected (for page refresh)
+            const profileMenuBtn = document.getElementById('profileMenuBtn');
+            const profileMenu = document.getElementById('profileMenu');
+            const switchProfileBtn = document.getElementById('switchProfileBtn');
+
+            function closeProfileMenu() {
+                if(profileMenu) profileMenu.classList.remove('show');
+            }
+
+            if(profileMenuBtn && profileMenu) {
+                //Toogle Menu
+                profileMenuBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    profileMenu.classList.toggle('show');
+                });
+
+                // close menu when clicking outside
+                document.addEventListener('click', () => closeProfileMenu());
+
+                // close menu with ESC key
+                document.addEventListener('keydown', (e)=> {
+                    if (e.key === 'Escape') closeProfileMenu();
+                });
+            }
+
+            if(switchProfileBtn) {
+                switchProfileBtn.addEventListener('click', () => {
+                    closeProfileMenu();
+
+                    // clear profile
+                    localStorage.removeItem('selectedProfile');
+
+                    // hide main content + header
+                    mainContentPage.classList.remove('active');
+                    header.classList.remove('visible');
+
+                    // show "who is watching?" again
+                    setTimeout(() => {
+                        profileSelectionPage.classList.add('active');
+                        window.scrollTo(0,0);
+                    }, 200);
+                });
+            }
       
             
             // Simple scroll effect for header

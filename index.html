@@ -15,22 +15,22 @@
                 <h2>Who's Watching?</h2>
                 <div class="profiles">
                     <div class="profile" data-profile="recruiter">
-                        <img src="/fotos/person1.png" alt="Person1" class="Person">
+                        <img src="fotos/person1.png" alt="Person1" class="Person">
                         <!-- <div class="profile-img blue">😊</div> -->
                         <div class="profile-name">Jacob</div>
                     </div>
                     <div class="profile" data-profile="developer">
-                        <img src="/fotos/person2.png" alt="Person2" class="Person">
+                        <img src="fotos/person2.png" alt="Person2" class="Person">
                         <!-- <div class="profile-img gray">😊</div> -->
                         <div class="profile-name">Santiago</div>
                     </div>
                     <div class="profile" data-profile="client">
-                        <img src="/fotos/person6.png" alt="Person3" class="Person">
+                        <img src="fotos/person6.png" alt="Person3" class="Person">
                         <!-- <div class="profile-img green">😊</div> -->
                         <div class="profile-name">Henry</div>
                     </div>
                     <div class="profile" data-profile="adventurer">
-                        <img src="/fotos/person4.png" alt="Person4" class="Person">
+                        <img src="fotos/person4.png" alt="Person4" class="Person">
                         <!-- <div class="profile-img orange">😊</div> -->
                         <div class="profile-name">Adventurer</div>
                     </div>
@@ -52,7 +52,13 @@
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#hire">Hire Me</a></li>
                     </ul>
-                    <div class="profile-icon">👤</div>
+                    <div class="profile-wrapper"> 
+                        <button class="profile-icon" id="profileMenuBtn">👤</button>
+
+                        <div class="profile-menu" id="profileMenu">
+                            <button class="profile-menu-item" id="switchProfileBtn">Switch Profile</button>
+                        </div>
+                    </div>
                 </nav>
             </div>
         </header>
@@ -62,7 +68,7 @@
                 <div id= "homeBackgroundimg" class="hero-content" >
                     <!-- style="background-image: url('fotos/contact_me.jpg')" for the hero-content div class to make an image for the home page-->
                     <h1>Henry - Programmer</h1>
-                    <p>Dynamic and results-driven Software Engineer with 1+ years in full-stack development across high-impact, large-scale applications. I bring expertise in React, Node, AWS, Kubernetes, and Docker, with a passion for optimizing systems to scale.</p>
+                    <p>Dynamic and results-driven Software Engineer with 1 years in full-stack development across high-impact, large-scale applications. I bring expertise in React, Node, AWS, Kubernetes, and Docker, with a passion for optimizing systems to scale.</p>
                     <div class="action-buttons">
                         <a href="Resume@Henry.pdf" download>
                             <button class="btn btn-primary">
@@ -184,7 +190,7 @@
                 </div>
                 
                 <div class="projects-container">
-                    <a href="https://github.com/HDramire/fighting-game" target="_blank">
+                    <a href="https://hdramire.github.io/fighting-game/" target="_blank">
                         <div class="project-card">
                             <div id="fightingGame" class="project-image">
                                 <span class="fade-text">Project 1</span>
@@ -259,4 +265,5 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
