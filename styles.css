@@ -493,7 +493,7 @@
 
         #fightingGame:hover {
             background-image: url('fotos/fighting_game.jpeg');
-            animation: fadeIn 0.8s ease-in;
+            animation: fadeIn 0.5s ease-in;
         }
          
         #fightingGame:hover .fade-text {
@@ -511,6 +511,7 @@
 
         #bakingWeb:hover {
             background-image: url('fotos/Logo.png');
+            animation: fadeIn 0.5s ease-in;
         }
         
         #bakingWeb:hover .fade-text {
