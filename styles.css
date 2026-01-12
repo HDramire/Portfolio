@@ -509,9 +509,13 @@
             opacity: 0; 
         }
 
-        /* #FightingGame:hover {
-            background-image: url('fotos/fighting_game.jpeg');
-        } */
+        #bakingWeb:hover {
+            background-image: url('fotos/Logo.png');
+        }
+        
+        #bakingWeb:hover .fade-text {
+            opacity: 0;
+        }
         
         .project-content {
             padding: 20px;
