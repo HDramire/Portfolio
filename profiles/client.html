@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client View | Henry Ramirez Jr.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="profile-client">
+    <header id="header" class="visible">
+        <div class="container">
+            <nav>
+                <div class="logo">Henry</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#client-request">Request Service</a></li>
+                    <li><a href="#projects">Work</a></li>
+                    <li><a href="#skills">Capabilities</a></li>
+                    <li><a href="#hire">Contact</a></li>
+                </ul>
+                <div class="profile-wrapper">
+                    <button class="profile-icon" id="profileMenuBtn" aria-label="Open profile menu">Profile</button>
+                    <div class="profile-menu" id="profileMenu">
+                        <button class="profile-menu-item" id="switchProfileBtn">Switch Profile</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <span class="eyebrow">Client View</span>
+                <h1>Need a website or app for your business? I can help build it.</h1>
+                <p>I made this page for business owners, teams, and organizations that need a modern website, customer-facing experience, or practical app to support how they work.</p>
+                <div class="action-buttons">
+                    <a href="#client-request" class="btn btn-primary">Request a Project</a>
+                    <a href="#projects" class="btn btn-secondary">See Work</a>
+                    <a href="mailto:hrehenry29@gmail.com" class="btn btn-secondary">Email Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="client-request">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Request a Website or App</h2>
+                <p class="section-subtitle">Choose the type of build you need and send the project request directly.</p>
+            </div>
+            <div class="client-request-layout">
+                <div class="service-options">
+                    <article class="service-card">
+                        <div class="service-icon">Website</div>
+                        <h3>Business Website</h3>
+                        <p>Best for a company site, service page, portfolio, landing page, or branded online presence.</p>
+                        <ul class="service-list">
+                            <li>Responsive layout for mobile and desktop</li>
+                            <li>Clear service or product presentation</li>
+                            <li>Calls to action for leads and customers</li>
+                        </ul>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">App</div>
+                        <h3>Business App</h3>
+                        <p>Best for workflow tools, customer-facing apps, internal dashboards, or interactive product experiences.</p>
+                        <ul class="service-list">
+                            <li>User-focused screens and flows</li>
+                            <li>Interactive features and logic</li>
+                            <li>Practical builds around business needs</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <form class="request-form" id="clientRequestForm">
+                    <div class="field-group">
+                        <label for="clientName">Name</label>
+                        <input id="clientName" name="clientName" type="text" placeholder="Your name" required>
+                    </div>
+                    <div class="field-group">
+                        <label for="clientBusiness">Business or Team</label>
+                        <input id="clientBusiness" name="clientBusiness" type="text" placeholder="Company, team, or organization" required>
+                    </div>
+                    <div class="field-group">
+                        <label for="clientEmail">Email</label>
+                        <input id="clientEmail" name="clientEmail" type="email" placeholder="you@company.com" required>
+                    </div>
+                    <div class="field-group">
+                        <span class="field-label">Project Type</span>
+                        <div class="choice-grid">
+                            <label class="choice-card">
+                                <input type="radio" name="projectType" value="Website" checked>
+                                <span>Website</span>
+                            </label>
+                            <label class="choice-card">
+                                <input type="radio" name="projectType" value="App">
+                                <span>App</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="field-group">
+                        <label for="clientDetails">Project Details</label>
+                        <textarea id="clientDetails" name="clientDetails" rows="5" placeholder="What do you need built, who is it for, and what should it help your business do?" required></textarea>
+                    </div>
+                    <div class="field-group">
+                        <label for="clientTimeline">Timeline</label>
+                        <input id="clientTimeline" name="clientTimeline" type="text" placeholder="Example: Needed within 6 weeks">
+                    </div>
+                    <div class="request-actions">
+                        <button type="submit" class="btn btn-primary">Send Project Request</button>
+                        <a href="mailto:hrehenry29@gmail.com" class="btn btn-secondary">Email Directly</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Examples of Work</h2>
+                <p class="section-subtitle">A few examples that show the range from interactive products to business-facing websites.</p>
+            </div>
+            <div class="projects-container">
+                <a href="https://hdramire.github.io/fighting-game/" target="_blank" rel="noreferrer">
+                    <div class="project-card">
+                        <div id="fightingGame" class="project-image">
+                            <span class="fade-text">Interactive Build</span>
+                        </div>
+                        <div class="project-content">
+                            <h3>Fighting Game</h3>
+                            <p>Shows interactive front-end logic, gameplay flow, and browser-based user interaction.</p>
+                            <div class="project-tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/HDramire/ContactApp2" target="_blank" rel="noreferrer">
+                    <div class="project-card">
+                        <div id="phoneContact" class="project-image">
+                            <span class="fade-text">React App</span>
+                        </div>
+                        <div class="project-content">
+                            <h3>Contacts App</h3>
+                            <p>Shows practical app structure, data display, and user input handling in React.</p>
+                            <div class="project-tags">
+                                <span class="tag">React.js</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://hdramire.github.io/Baking-web/" target="_blank" rel="noreferrer">
+                    <div class="project-card">
+                        <div id="bakingWeb" class="project-image">
+                            <span class="fade-text">Business Site</span>
+                        </div>
+                        <div class="project-content">
+                            <h3>Baking Web</h3>
+                            <p>Shows how a simple, clear website can help a small business present itself and reach more people online.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Capabilities</h2>
+                <p class="section-subtitle">What I can bring to a client project based on the work I have built so far.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Website Builds</h3>
+                    <ul class="skill-list">
+                        <li>Responsive design</li>
+                        <li>Service and product presentation</li>
+                        <li>Clean customer-facing layouts</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>App Builds</h3>
+                    <ul class="skill-list">
+                        <li>React-based interfaces</li>
+                        <li>Interactive user flows</li>
+                        <li>Practical front-end logic</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Technical Tools</h3>
+                    <ul class="skill-list">
+                        <li>React.js</li>
+                        <li>JavaScript</li>
+                        <li>Node.js</li>
+                        <li>HTML / CSS</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Working Style</h3>
+                    <ul class="skill-list">
+                        <li>Clear communication</li>
+                        <li>Project-based problem solving</li>
+                        <li>User-focused execution</li>
+                        <li>Iterative improvement</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="hire">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Start the Conversation</h2>
+                <p class="section-subtitle">If your business needs a website or app, use the request form or email directly.</p>
+            </div>
+            <div class="hire-panel">
+                <div>
+                    <h3>Best fit for</h3>
+                    <ul class="hire-list">
+                        <li>Small business websites</li>
+                        <li>Early-stage app ideas</li>
+                        <li>Internal team tools</li>
+                        <li>Interactive business experiences</li>
+                    </ul>
+                </div>
+                <div class="hire-actions">
+                    <a href="#client-request" class="btn btn-primary">Request a Build</a>
+                    <a href="mailto:hrehenry29@gmail.com" class="btn btn-secondary">Email Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Henry Ramirez Jr. All rights reserved.</p>
+            <p>Client-focused portfolio inspired by streaming profile selection patterns.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
