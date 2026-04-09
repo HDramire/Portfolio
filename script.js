@@ -69,12 +69,28 @@ document.addEventListener("DOMContentLoaded", () => {
             event.preventDefault();
 
             const formData = new FormData(clientRequestForm);
-            const projectType = formData.get("projectType") || "Website";
-            const clientName = formData.get("clientName") || "";
-            const clientBusiness = formData.get("clientBusiness") || "";
-            const clientEmail = formData.get("clientEmail") || "";
-            const clientDetails = formData.get("clientDetails") || "";
-            const clientTimeline = formData.get("clientTimeline") || "Not specified";
+            const projectType = getTrimmedValue(formData.get("projectType")) || "Website";
+            const clientName = getTrimmedValue(formData.get("clientName"));
+            const clientBusiness = getTrimmedValue(formData.get("clientBusiness"));
+            const clientEmail = getTrimmedValue(formData.get("clientEmail"));
+            const clientDetails = getTrimmedValue(formData.get("clientDetails"));
+            const clientTimeline = getTrimmedValue(formData.get("clientTimeline")) || "Not specified";
+
+            if (!clientName || !clientBusiness || !clientEmail || !clientDetails) {
+                window.alert("Please complete all required fields before sending your request.");
+                return;
+            }
+
+            if (!isValidEmail(clientEmail)) {
+                window.alert("Please enter a valid email address.");
+                return;
+            }
+
+            if (clientDetails.length > 1500) {
+                window.alert("Project details are too long. Please keep them under 1500 characters.");
+                return;
+            }
+
             const subject = encodeURIComponent(`${projectType} request from ${clientBusiness}`);
             const body = encodeURIComponent(
                 `Name: ${clientName}\n` +
@@ -85,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 `Project Details:\n${clientDetails}`
             );
 
-            window.location.href = `mailto:hrehenry29@gmail.com?subject=${subject}&body=${body}`;
+            window.location.assign(`mailto:hrehenry29@gmail.com?subject=${subject}&body=${body}`);
         });
     }
 
@@ -96,4 +112,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         header.classList.toggle("scrolled", window.scrollY > 50);
     });
+
+    function getTrimmedValue(value) {
+        return typeof value === "string" ? value.trim() : "";
+    }
+
+    function isValidEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
 });

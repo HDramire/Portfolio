@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; font-src https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Client View | Henry Ramirez Jr.</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
@@ -77,15 +79,15 @@
                 <form class="request-form" id="clientRequestForm">
                     <div class="field-group">
                         <label for="clientName">Name</label>
-                        <input id="clientName" name="clientName" type="text" placeholder="Your name" required>
+                        <input id="clientName" name="clientName" type="text" placeholder="Your name" maxlength="80" autocomplete="name" required>
                     </div>
                     <div class="field-group">
                         <label for="clientBusiness">Business or Team</label>
-                        <input id="clientBusiness" name="clientBusiness" type="text" placeholder="Company, team, or organization" required>
+                        <input id="clientBusiness" name="clientBusiness" type="text" placeholder="Company, team, or organization" maxlength="120" autocomplete="organization" required>
                     </div>
                     <div class="field-group">
                         <label for="clientEmail">Email</label>
-                        <input id="clientEmail" name="clientEmail" type="email" placeholder="you@company.com" required>
+                        <input id="clientEmail" name="clientEmail" type="email" placeholder="you@company.com" maxlength="120" inputmode="email" autocomplete="email" required>
                     </div>
                     <div class="field-group">
                         <span class="field-label">Project Type</span>
@@ -102,11 +104,11 @@
                     </div>
                     <div class="field-group">
                         <label for="clientDetails">Project Details</label>
-                        <textarea id="clientDetails" name="clientDetails" rows="5" placeholder="What do you need built, who is it for, and what should it help your business do?" required></textarea>
+                        <textarea id="clientDetails" name="clientDetails" rows="5" maxlength="1500" placeholder="What do you need built, who is it for, and what should it help your business do?" required></textarea>
                     </div>
                     <div class="field-group">
                         <label for="clientTimeline">Timeline</label>
-                        <input id="clientTimeline" name="clientTimeline" type="text" placeholder="Example: Needed within 6 weeks">
+                        <input id="clientTimeline" name="clientTimeline" type="text" maxlength="80" placeholder="Example: Needed within 6 weeks">
                     </div>
                     <div class="request-actions">
                         <button type="submit" class="btn btn-primary">Send Project Request</button>
@@ -124,7 +126,7 @@
                 <p class="section-subtitle">A few examples that show the range from interactive products to business-facing websites.</p>
             </div>
             <div class="projects-container">
-                <a href="https://hdramire.github.io/fighting-game/" target="_blank" rel="noreferrer">
+                <a href="https://hdramire.github.io/fighting-game/" target="_blank" rel="noopener noreferrer">
                     <div class="project-card">
                         <div id="fightingGame" class="project-image">
                             <span class="fade-text">Interactive Build</span>
@@ -140,7 +142,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="https://github.com/HDramire/ContactApp2" target="_blank" rel="noreferrer">
+                <a href="https://github.com/HDramire/ContactApp2" target="_blank" rel="noopener noreferrer">
                     <div class="project-card">
                         <div id="phoneContact" class="project-image">
                             <span class="fade-text">React App</span>
@@ -157,7 +159,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="https://hdramire.github.io/Baking-web/" target="_blank" rel="noreferrer">
+                <a href="https://hdramire.github.io/Baking-web/" target="_blank" rel="noopener noreferrer">
                     <div class="project-card">
                         <div id="bakingWeb" class="project-image">
                             <span class="fade-text">Business Site</span>

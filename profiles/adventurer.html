@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; font-src https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Adventurer View | Henry Ramirez Jr.</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
@@ -37,7 +39,7 @@
                 <p>This view is about the side of me that enjoys exploring ideas through code, building interactive projects, and turning curiosity into something people can actually use.</p>
                 <div class="action-buttons">
                     <a href="#projects" class="btn btn-primary">Explore Projects</a>
-                    <a href="https://github.com/HDramire" target="_blank" rel="noreferrer" class="btn btn-secondary">See More Code</a>
+                    <a href="https://github.com/HDramire" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">See More Code</a>
                     <a href="mailto:hrehenry29@gmail.com" class="btn btn-secondary">Say Hello</a>
                 </div>
             </div>
@@ -51,7 +53,7 @@
                 <p class="section-subtitle">Projects that show experimentation, creativity, and a willingness to turn ideas into working experiences.</p>
             </div>
             <div class="projects-container">
-                <a href="https://hdramire.github.io/fighting-game/" target="_blank" rel="noreferrer">
+                <a href="https://hdramire.github.io/fighting-game/" target="_blank" rel="noopener noreferrer">
                     <div class="project-card">
                         <div id="fightingGame" class="project-image">
                             <span class="fade-text">Playful Build</span>
@@ -67,7 +69,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="https://github.com/HDramire/ContactApp2" target="_blank" rel="noreferrer">
+                <a href="https://github.com/HDramire/ContactApp2" target="_blank" rel="noopener noreferrer">
                     <div class="project-card">
                         <div id="phoneContact" class="project-image">
                             <span class="fade-text">Useful Build</span>
@@ -84,7 +86,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="https://hdramire.github.io/Baking-web/" target="_blank" rel="noreferrer">
+                <a href="https://hdramire.github.io/Baking-web/" target="_blank" rel="noopener noreferrer">
                     <div class="project-card">
                         <div id="bakingWeb" class="project-image">
                             <span class="fade-text">Personal Build</span>
@@ -190,7 +192,7 @@
                 </div>
                 <div class="hire-actions">
                     <a href="mailto:hrehenry29@gmail.com" class="btn btn-primary">Email Me</a>
-                    <a href="https://github.com/HDramire" target="_blank" rel="noreferrer" class="btn btn-secondary">View GitHub</a>
+                    <a href="https://github.com/HDramire" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">View GitHub</a>
                 </div>
             </div>
         </div>

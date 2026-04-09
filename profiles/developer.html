@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; font-src https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Developer View | Henry Ramirez Jr.</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
@@ -36,7 +38,7 @@
                 <h1>I like building interactive products, not just static pages.</h1>
                 <p>This view focuses on how I work: React, JavaScript, Node.js, Java, C++, responsive UI work, and projects that show hands-on coding across gameplay, data entry, and business-facing experiences.</p>
                 <div class="action-buttons">
-                    <a href="https://github.com/HDramire" target="_blank" rel="noreferrer" class="btn btn-primary">View GitHub</a>
+                    <a href="https://github.com/HDramire" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View GitHub</a>
                     <a href="#projects" class="btn btn-secondary">See Projects</a>
                     <a href="mailto:hrehenry29@gmail.com" class="btn btn-secondary">Talk Code</a>
                 </div>
@@ -96,7 +98,7 @@
                 <p class="section-subtitle">These three builds show how I approach interaction, state, layout, and user-facing functionality.</p>
             </div>
             <div class="projects-container">
-                <a href="https://hdramire.github.io/fighting-game/" target="_blank" rel="noreferrer">
+                <a href="https://hdramire.github.io/fighting-game/" target="_blank" rel="noopener noreferrer">
                     <div class="project-card">
                         <div id="fightingGame" class="project-image">
                             <span class="fade-text">Gameplay Logic</span>
@@ -112,7 +114,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="https://github.com/HDramire/ContactApp2" target="_blank" rel="noreferrer">
+                <a href="https://github.com/HDramire/ContactApp2" target="_blank" rel="noopener noreferrer">
                     <div class="project-card">
                         <div id="phoneContact" class="project-image">
                             <span class="fade-text">React State</span>
@@ -129,7 +131,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="https://hdramire.github.io/Baking-web/" target="_blank" rel="noreferrer">
+                <a href="https://hdramire.github.io/Baking-web/" target="_blank" rel="noopener noreferrer">
                     <div class="project-card">
                         <div id="bakingWeb" class="project-image">
                             <span class="fade-text">Business UI</span>

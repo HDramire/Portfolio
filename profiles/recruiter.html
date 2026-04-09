@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; font-src https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Recruiter View | Henry Ramirez Jr.</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
@@ -38,7 +40,7 @@
                 <p>I am a software engineer with hands-on experience building responsive web applications in React, JavaScript, Node.js, Java, C++, HTML, and CSS. I organized this page for fast hiring review: resume, experience highlights, technical strengths, project proof, and direct contact.</p>
                 <div class="action-buttons">
                     <a href="../Resume@Henry.pdf" download class="btn btn-primary">Download Resume</a>
-                    <a href="https://www.linkedin.com/in/henry-ramirez-jr-a939a5216/" target="_blank" rel="noreferrer" class="btn btn-secondary">View LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/henry-ramirez-jr-a939a5216/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">View LinkedIn</a>
                     <a href="mailto:hrehenry29@gmail.com" class="btn btn-secondary">Email Me</a>
                 </div>
             </div>
@@ -167,7 +169,7 @@
                 <p class="section-subtitle">Project examples that demonstrate practical coding ability, UI implementation, and willingness to ship complete work.</p>
             </div>
             <div class="projects-container">
-                <a href="https://hdramire.github.io/fighting-game/" target="_blank" rel="noreferrer">
+                <a href="https://hdramire.github.io/fighting-game/" target="_blank" rel="noopener noreferrer">
                     <div class="project-card">
                         <div id="fightingGame" class="project-image">
                             <span class="fade-text">Interactive Build</span>
@@ -183,7 +185,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="https://github.com/HDramire/ContactApp2" target="_blank" rel="noreferrer">
+                <a href="https://github.com/HDramire/ContactApp2" target="_blank" rel="noopener noreferrer">
                     <div class="project-card">
                         <div id="phoneContact" class="project-image">
                             <span class="fade-text">React App</span>
@@ -200,7 +202,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="https://hdramire.github.io/Baking-web/" target="_blank" rel="noreferrer">
+                <a href="https://hdramire.github.io/Baking-web/" target="_blank" rel="noopener noreferrer">
                     <div class="project-card">
                         <div id="bakingWeb" class="project-image">
                             <span class="fade-text">Business Site</span>
