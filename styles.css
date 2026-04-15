@@ -280,6 +280,14 @@ nav {
     animation: fadeIn 1s ease;
 }
 
+.ownership-note {
+    max-width: 720px;
+    margin: 0 auto 28px;
+    color: rgba(255, 255, 255, 0.72);
+    text-align: center;
+    font-size: 15px;
+}
+
 .profiles {
     display: flex;
     justify-content: center;
@@ -765,6 +773,7 @@ footer {
 footer p {
     color: var(--text-muted);
     font-size: 14px;
+    margin-top: 8px;
 }
 
 @keyframes fadeIn {
